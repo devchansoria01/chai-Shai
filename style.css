@@ -1,0 +1,152 @@
+/*css Reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#navbar{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Navbar: logo $ image */
+#logo{
+    margin: 19px 22px;
+}
+#logo img{
+    height: 80px;
+}
+/* Navbar list styling*/
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    
+}
+#navbar ul li a{
+    color: white;
+    padding: 11px 37px;
+    margin: 14px;
+    /* border: 2px solid black;*/
+    border-radius: 20px; 
+    display: block;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+/*Home Section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 200px;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/coffee-beans-5928036_1920.jpg')
+}
+
+/* Sercives section*/
+.services{
+    margin:30px;
+    display: flex;
+}
+.services .box{
+    border: 5px solid blue;
+    padding:25px;
+    width: 30%;
+    margin: 1.5%;
+}
+.services .box img{
+    height: 290px;
+    width: 350px;
+    display: block;
+    border: 3px solid white;
+    margin: auto;
+    
+}
+
+/* P Media & social media */
+.sponsers img{
+    height: 100px;
+    margin: 20px;
+}
+
+.socialImage:hover{
+    width: 5.5vw;
+}
+.powered{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.socialmedia{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.socialmedia img{
+    width: 5vw;
+    margin: 20px;
+}
+/*Utility Class*/
+.content{
+    padding: 0px 6cm;
+}
+.h-primary{
+    font-size: 2.8rem;
+    padding: 10px;
+    font-family: 'IM Fell English SC', serif;
+}
+.h-sec{
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Bonheur Royale', cursive;
+}
+.h-ter{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.btn{
+    padding: 6px 20px;
+    border: 3px solid black;
+    border-radius: 12px;
+    margin: 3px 0px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+.text{
+    font-size: 1.2rem;   
+}
+
+/* form  */
+form{
+    text-align: center;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+}
+label,input{
+    margin:10px;
+}
+
+footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+}
